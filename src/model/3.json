@@ -1,0 +1,533 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "tehade mensa",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CaptureAllIntent",
+                    "slots": [
+                        {
+                            "name": "datum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "vorliebe",
+                            "type": "vorliebe"
+                        },
+                        {
+                            "name": "allergie",
+                            "type": "allergie"
+                        }
+                    ],
+                    "samples": [
+                        "was es {datum} zu essen gab ohne {allergie}",
+                        "was es {datum} zu essen gibt und ich habe eine {allergie} allergie",
+                        "was es {datum} {vorliebe} zu essen gab ohne {allergie}",
+                        "was es {datum} {vorliebe} zu essen gab",
+                        "was es {datum} zu essen gab",
+                        "was es {datum} zu essen ohne {allergie} gibt",
+                        "was es {datum} {vorliebe} zu essen gibt",
+                        "was es {datum} zu essen gibt",
+                        "was gibt es {datum} zu essen ohne {allergie}",
+                        "was gibt es {datum} zu {vorliebe} zu essen",
+                        "was gibt es {datum} zu essen"
+                    ]
+                },
+                {
+                    "name": "AutoDelegationIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        },
+                        {
+                            "name": "allergie",
+                            "type": "allergie"
+                        },
+                        {
+                            "name": "vorliebe",
+                            "type": "vorliebe"
+                        },
+                        {
+                            "name": "datum",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "ich heiße {name} und habe eine allergie gegen {allergie}",
+                        "ich heiße {name} und bin {vorliebe}",
+                        "ich heiße {name} und bin {vorliebe} und habe eine allergie gegen {allergie} ",
+                        "ich heiße {name} und bin {vorliebe} und habe eine allergie gegen {allergie} und will {datum} essen gehen",
+                        "ich bin der {name} bin {vorliebe} und habe eine allergie gegen {allergie} und möchte {datum} essen gehen",
+                        "Hallo ich bin die {name}",
+                        "Hallo ich bin der {name}",
+                        "Hallo ich heiße {name}",
+                        "Hallo bin die {name}",
+                        "Hallo bin der {name}",
+                        "{name} ist mein Name",
+                        "Merke dir {name}",
+                        "Für dich bin ich der {name}",
+                        "Kannst {name} zu mir sagen.",
+                        "Du kannst {name} zu mir sagen.",
+                        "Sage {name} zu mir.",
+                        "Sag {name} zu mir.",
+                        "Nenne mich {name}",
+                        "Nenn mich {name}",
+                        "Nenne mich bitte {name}",
+                        "{name} heiße ich.",
+                        "Mein Name ist {name}",
+                        "Heiße {name}",
+                        "Ich heiße {name}",
+                        "Ich bin die {name}",
+                        "Die {name}",
+                        "Der {name}",
+                        "Bin der {name}",
+                        "Ich bin der {name}",
+                        "{name}",
+                        "{datum}",
+                        "Geplant am {datum}",
+                        "Geplant {datum}",
+                        "der Plan ist am {datum}",
+                        "der Plan ist {datum}",
+                        "Ich habe am {datum} geplant",
+                        "Ich habe {datum} geplant",
+                        "Ich habe es am {datum} geplant",
+                        "Ich habe es {datum} geplant",
+                        "am besten {datum}",
+                        "und sag mir was es am {datum} zu essen gibt",
+                        "und sage mir was es am {datum} zu essen gibt",
+                        "und sage mir was es {datum} zu essen gibt",
+                        "und sag mir was es {datum} zu essen gibt",
+                        "und zähle mir bitte die Hauptgerichte von {datum} auf",
+                        "Zähl mir bitte die Hauptgerichte von {datum} auf",
+                        "zähle mir bitte die Hauptgerichte von {datum} auf",
+                        "und zähle mir Gerichte vom {datum} auf",
+                        "Zähle mir die Gerichte vom {datum} auf",
+                        "Zähl mir die Gerichte vom {datum} auf",
+                        "und zähle mir die Gerichte von {datum} auf",
+                        "Zähle mir die Gerichte von {datum} auf",
+                        "Zähl mir die Gerichte von {datum} auf",
+                        "Und zähle mir bitte die Gerichte vom {datum} auf",
+                        "Zähle mir bitte die Gerichte vom {datum} auf",
+                        "Zähl mir bitte die Gerichte vom {datum} auf",
+                        "Und zähle mir bitte die Gerichte von {datum} auf",
+                        "Zähle mir bitte die Gerichte von {datum} auf",
+                        "Zähl mir bitte die Gerichte von {datum} auf",
+                        "Nenne mir die Speisen vom {datum}",
+                        "Nenne mir die Speisen von {datum}",
+                        "Sage mir die Speisen vom {datum}",
+                        "Sage mir die Speisen von {datum}",
+                        "Sage mir die gerichte vom {datum}",
+                        "Sage mir die gerichte von {datum}",
+                        "Nenne mir die Gerichte vom {datum}",
+                        "Nenne mir die Gerichte von {datum}",
+                        "Nenn mir die Gerichte vom {datum}",
+                        "Nenn mir die Gerichte von {datum}",
+                        "Nenne mir die Hauptgerichte vom {datum}",
+                        "Nenne mir die Hauptgerichte von {datum}",
+                        "Sage mir die Hauptgerichte vom {datum}",
+                        "Sage mir die Hauptgerichte von {datum}",
+                        "Sag mir die Hauptgerichte vom {datum}",
+                        "Sag mir die Hauptgerichte von {datum}",
+                        "Ich gehe am {datum} essen",
+                        "{vorliebe}",
+                        "{allergie}",
+                        "{allergie} allergie sonst esse ich {vorliebe}",
+                        "{allergie} allergie und {vorliebe}",
+                        "ich bin {vorliebe} mit einer {allergie} allergie",
+                        "bin {vorliebe} mit einer {allergie} allergie",
+                        "{vorliebe} mit {allergie} allergie",
+                        "{vorliebe} aber eine {allergie} allergie",
+                        "{vorliebe} und {allergie} allergie",
+                        "{vorliebe} esse ich und keine {allergie}",
+                        "esse {vorliebe} habe aber eine {allergie} allergie",
+                        "{allergie} allergie ernähre mich aber {vorliebe}",
+                        "ich bin {vorliebe} habe aber eine {allergie} allergie",
+                        "ich esse {vorliebe} habe aber eine {allergie} allergie",
+                        "ich esse {vorliebe}",
+                        "{vorliebe} am liebsten",
+                        "am liebsten esse ich {vorliebe}",
+                        "{vorliebe} natürlich",
+                        "natürlich {vorliebe}",
+                        "am liebsten {vorliebe}",
+                        "Ernähre mich {vorliebe}",
+                        "Ich ernähre mich {vorliebe}",
+                        "{vorliebe} bin ich",
+                        "bin {vorliebe}",
+                        "ich bin {vorliebe}",
+                        "hab eine {allergie} allergie",
+                        "Ich hab eine {allergie} allergie",
+                        "{allergie} allergie",
+                        "eine nuss {allergie}",
+                        "habe eine {allergie} allergie",
+                        "Ich habe eine {allergie} allergie",
+                        "merk dir dass ich keine {allergie} vertrag",
+                        "merk dir dass ich keine {allergie} vertrage",
+                        "merke dir dass ich keine {allergie} vertrage",
+                        "vertrag kein {allergie}",
+                        "vertrag keine {allergie}",
+                        "kein {allergie}",
+                        "keine {allergie}",
+                        "vertrage keine {allergie}",
+                        "ich vertrage keine {allergie}",
+                        "gegen {allergie}",
+                        "allergisch gegen {allergie}",
+                        "Bin allergisch gegen {allergie}",
+                        "Ich bin allergisch gegen {allergie}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "status",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Gast",
+                                "synonyms": [
+                                    "Externe",
+                                    "Externer",
+                                    "extern"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angestellter",
+                                "synonyms": [
+                                    "Angestellte",
+                                    "angestellt"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Student",
+                                "synonyms": [
+                                    "Studium",
+                                    "Studentin",
+                                    "studiere",
+                                    "Studierender"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "allergie",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None",
+                                "synonyms": [
+                                    "ne",
+                                    "nichts",
+                                    "nein habe ich nicht",
+                                    "ich hab keine",
+                                    "Nein",
+                                    "Keine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Milchprodukte",
+                                "synonyms": [
+                                    "Lactoseintolerant",
+                                    "Lactoseintoleranz",
+                                    "Lactose",
+                                    "Milchprodukt",
+                                    "Milch"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nüsse",
+                                "synonyms": [
+                                    "Queenslandnuss",
+                                    "Macadamianuss",
+                                    "Pecannuss",
+                                    "Cashew",
+                                    "Mandeln",
+                                    "Mandel",
+                                    "Pistazie",
+                                    "Paranuss",
+                                    "Walnuss",
+                                    "Erdnüsse",
+                                    "Erdnuss",
+                                    "Nussprodukte",
+                                    "Hülsenfrüchte",
+                                    "Nuss"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eier",
+                                "synonyms": [
+                                    "Ei"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gluten",
+                                "synonyms": [
+                                    "Kamut",
+                                    "Dinkel",
+                                    "Hafer",
+                                    "Gerste",
+                                    "Roggen",
+                                    "Weizen",
+                                    "Getreide"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "vorliebe",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "None",
+                                "synonyms": [
+                                    "ne",
+                                    "nein danke",
+                                    "nein bin ich nicht",
+                                    "keine",
+                                    "nein",
+                                    "Nein ich esse alles"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vegan",
+                                "synonyms": [
+                                    "veganer",
+                                    "veganes",
+                                    "Pflanze",
+                                    "Pflanzen",
+                                    "Veganerin",
+                                    "Vegan"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vegetarisch",
+                                "synonyms": [
+                                    "ja",
+                                    "veggi",
+                                    "vegetarierin",
+                                    "vegetarier",
+                                    "vegetarisches",
+                                    "Vegetarierin",
+                                    "Vegetarisch"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AutoDelegationIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.DE_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.326466216445.1042607421951"
+                            }
+                        },
+                        {
+                            "name": "allergie",
+                            "type": "allergie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.326466216445.232680792861"
+                            }
+                        },
+                        {
+                            "name": "vorliebe",
+                            "type": "vorliebe",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.326466216445.421087342562"
+                            }
+                        },
+                        {
+                            "name": "datum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.326466216445.737372610166"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1501262689543.1055319679593",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Freut mich dich kennenzulernen. Ich bin Alexa und du?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Ich bin Alexa und du?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.341044622383.815617332063",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Bitte sage mir ob du hier studierst, Angestellter oder Gast bist"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.687634492838.1495139282795",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Und gibt es Allergien die ich beachten soll?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Verstanden. Hast du eine Allergie die ich beachten soll?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.687634492838.1061561160335",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Und isst du alles oder ernährst du dich am liebsten vegan oder vegetarisch?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.2052416633.674012463737",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Interessierst du dich auch für die Beilagen, Suppen oder Desserts?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1229999584498",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Wann hast du vor essen zu gehen?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1229999584498.1128132060031",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Wann möchtest du essen gehen?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.326466216445.1042607421951",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Ich bin auch {vorliebe} . Aber wie heißt du eigentlich?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Ich bin Alexa, und wie heißt du?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.326466216445.232680792861",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hallo {name} . Bitte nenne mir deine Allergie, falls du eine hast."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Nenne deine Allergie"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.326466216445.421087342562",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Bist du denn Vegetarier oder Veganer?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.326466216445",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "wat is hier los"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.326466216445.737372610166",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Wann möchtest du denn essen gehen?"
+                    }
+                ]
+            }
+        ]
+    }
+}
