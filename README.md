@@ -1,6 +1,6 @@
 # THD_Mensa_Alexa_Skill
 
-Implementiert einen Alexa Skill um Infos der Mensa der technischen Hochschule Deggendorf zu erhalten. 
+Implementiert einen Alexa Skill um Infos über den Speiseplan der Mensa der technischen Hochschule Deggendorf zu erhalten. 
 
 Nutzung:
 - src/lambda_package als ZIP packen und in AWS in eine Lambda importieren.
