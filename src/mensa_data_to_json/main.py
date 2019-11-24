@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import os
 from src.mensa_data_to_json.conversion import Conversion
 
 # Pandas setting to display more columns
@@ -14,7 +15,7 @@ class MensaDataToJson:
             raise ValueError("Impossible calendar week.")
 
         self.data = requests.get("https://www.stwno.de/infomax/daten-extern/csv/HS-DEG/"
-                                 + calendar_week
+                                 + str(calendar_week)
                                  + ".csv?t=1572510478").text
 
     def clean_up(self):
@@ -190,6 +191,10 @@ class MensaDataToJson:
 
         # Dataframe to json
         # df_json = df.to_json(orient='records', force_ascii=False)  # force_ascii=False because of Umlaute
-        df.to_json("data.json", orient='records', force_ascii=False)  # force_ascii=False because of Umlaute
+        df.to_json(os.path.dirname(__file__) + "\\data.json", orient='records', force_ascii=False)  # force_ascii=False because of Umlaute
         # print(df_json)
         # df.to_csv("test.csv", encoding='utf-8', sep=";")
+
+# if __name__ == '__main__':
+#     m = MensaDataToJson(48)
+#     m.run()
